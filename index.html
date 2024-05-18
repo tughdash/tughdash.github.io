@@ -1,0 +1,32 @@
+<html>
+<div class="tile-container">
+  <div class="tile" style="background-image: url('icon1.png');"></div>
+  <div class="tile" style="background-image: url('icon2.png');"></div>
+  <div class="tile" style="background-image: url('icon3.png');"></div>
+</div>
+
+<style>
+  .tile-container {
+    display: flex; /* Or use absolute positioning */
+    justify-content: center; /* Center horizontally */
+    align-items: center; /* Center vertically */
+    width: fit-content; /* Adjust width as needed */
+  }
+
+  .tile {
+    width: 100px; /* Adjust width as needed */
+    height: 100px; /* Adjust height as needed */
+    background-size: cover; /* Ensure icons fill the tile */
+    margin: 10px; /* Adjust spacing between tiles */
+    position: relative; /* For absolute positioning of text */
+  }
+
+  .tile .text {
+    position: absolute;
+    bottom: 10px; /* Adjust text position */
+    left: 50%;
+    transform: translateX(-50%); /* Center text horizontally */
+    color: white; /* Adjust text color */
+  }
+</style>
+</html>
