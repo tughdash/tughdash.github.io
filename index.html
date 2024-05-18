@@ -1,32 +1,51 @@
-<html>
-<div class="tile-container">
-  <div class="tile" style="background-image: url('icon1.png');"></div>
-  <div class="tile" style="background-image: url('icon2.png');"></div>
-  <div class="tile" style="background-image: url('icon3.png');"></div>
-</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Three Tiles</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="tile-container">
+    <div class="tile" style="background-image: url('icon1.png');"></div>
+    <div class="tile" style="background-image: url('icon2.png');"></div>
+    <div class="tile" style="background-image: url('icon3.png');"></div>
+  </div>
 
-<style>
-  .tile-container {
-    display: flex; /* Or use absolute positioning */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
-    width: fit-content; /* Adjust width as needed */
-  }
+  <script src="script.js"></script> </body>
+  <style>
+    body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
 
-  .tile {
-    width: 100px; /* Adjust width as needed */
-    height: 100px; /* Adjust height as needed */
-    background-size: cover; /* Ensure icons fill the tile */
-    margin: 10px; /* Adjust spacing between tiles */
-    position: relative; /* For absolute positioning of text */
-  }
+.tile-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* 100vh for full viewport height */
+  width: 100vw; /* 100vw for full viewport width */
+}
 
-  .tile .text {
-    position: absolute;
-    bottom: 10px; /* Adjust text position */
-    left: 50%;
-    transform: translateX(-50%); /* Center text horizontally */
-    color: white; /* Adjust text color */
-  }
-</style>
+.tile {
+  width: 200px; /* Adjust width as needed */
+  height: 200px; /* Adjust height as needed */
+  background-size: cover;
+  margin: 10px;
+  position: relative;
+}
+
+.tile .text {
+  position: absolute;
+  bottom: 10px; /* Adjust text position */
+  left: 50%;
+  transform: translateX(-50%); /* Center text horizontally */
+  color: white; /* Adjust text color */
+  font-size: 16px; /* Adjust font size */
+  text-align: center; /* Center text vertically */
+}
+
+  </style>
 </html>
